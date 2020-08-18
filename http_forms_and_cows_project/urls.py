@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from http_forms_and_cows_app.views import index_view, history_view
 
+# Got help with VS Code terminal error from Joe Kaufeld and Peter Marsh in study hall.
 urlpatterns = [
+    path('', index_view, name="homepage"),
+    path('history/', history_view, name="historyview"),
     path('admin/', admin.site.urls),
 ]

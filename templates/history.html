@@ -1,0 +1,10 @@
+<a href="/">Home</a>
+<a href="/history/">History</a>
+
+<div>
+    <ul>
+    {% for cowsay in history %}
+        <li><pre>{{ cowsay.cowsay }}</pre></li>
+    {% endfor %}
+    </ul>
+</div>

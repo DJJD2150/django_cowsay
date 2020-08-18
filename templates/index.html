@@ -1,0 +1,15 @@
+<a href="/">Home</a>
+<a href="/history/">History</a>
+
+<h1>Django Cowsay Application</h1>
+<h2>What does the cow say?</h2>
+
+<div>
+    <pre>{{ cow_mooove }}</pre>
+</div>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit!">
+</form>
